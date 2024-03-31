@@ -36,6 +36,11 @@ class AdminPanelProvider extends PanelProvider
                 'warning' => Color::Orange,
             ])
             ->font('Tauri')
+            ->navigationGroups([
+                'System Management',
+                'Employee Management',
+                'User Management',
+            ])
             ->brandLogo(asset('images/logo.png'))
             ->favicon(asset('images/favicon.png'))
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
